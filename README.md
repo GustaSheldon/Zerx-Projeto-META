@@ -41,3 +41,7 @@
   - Execute o código Python com a câmera posicionada para capturar a mão do usuário.
   - Observe a mão robótica replicando os movimentos em tempo real
   Dica: Mantenha a mão centralizada na câmera para melhores resultados de rastreamento.
+
+### 📓 Diário de bordo:
+  ```bash
+  https://docs.google.com/document/d/1PFmZ-JfQwFuOwu88TLG1hwXJkmD0gUxjG_UbMS_SyS4/edit?usp=sharing
