@@ -6,6 +6,7 @@
   Este projeto tem como objetivo o uso em fábricas e ambientes de trabalho que podem trazer perigos aos trabalhadores, para que um operário possa realizar seu trabalho através da mão robótica, não colocando seu membro em risco.
   Utilizando uma câmera comum, o software em Python faz a leitura dos movimentos realizados pelo usuário, com OpenCV.
   Esses dados são então enviados, através de uma comunicação serial, para o Arduino, que os recebe e interpreta, para que possa controlar os servos de forma que repliquem os movimentos realizados pelo usuário
+  
   Obs.: para programação do código do Arduino, foi usada a extensão PlatformIO do VsCode, não a ArduinoIDE
   
 ### ⚙️ Funcionalidades:
