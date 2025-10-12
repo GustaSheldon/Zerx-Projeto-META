@@ -1,0 +1,15 @@
+TODO ESP:
+
+[ ] Conectar-se ao Servidor Python
+    [ ] Incluir as bibliotecas WiFi, WebSocketsClient e ArduinoJson
+    [ ] Definir as credenciais do Wi-Fi (SSID, password)
+    [ ] No setup(), conectar-se à rede Wi-Fi
+    [ ] Iniciar a conexão WebSocket para o IP e porta do servidor Python
+    [ ] Registrar a função webSocketEvent para lidar com a comunicação
+    [ ] Dentro do onConnect do webSocketEvent, enviar uma mensagem JSON para o servidor para se identificar (ex.: {"tipo": "conexao", "id": "esp32"})
+
+[ ] Receber e Enviar Informações
+    [ ] Na função webSocketEvent, no caso WStype_TEXT, usar deserializeJson() para analisar o comando do servidor
+    [ ] Usar a lógica (if/else) para executar a ação dos servos com base no comando recebido
+    [ ] Criar uma função, como enviarDadosDoSensor(), que será chamada no loop() do Arduino
+    [ ] Dentro dela, criar um objeto JSON com os dados e usar webSocket.sendTXT() para enviá-lo de volta ao servidor
